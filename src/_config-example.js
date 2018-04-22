@@ -4,5 +4,12 @@
 
 module.exports = {
     LIST_URL: ``,
-    DELETE_URL: ``
+    DELETE_URL: ``,
+    /**
+     * 微博删除策略，将传入Array.prototype.filter
+     * @param {*} record 
+     */
+    DELETE_STRATEGY(record, index) {
+        return false
+    },
 }
